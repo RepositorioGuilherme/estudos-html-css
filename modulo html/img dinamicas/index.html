@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>img</title>
+</head>
+<body>
+    <h1>imagens dinâmicas</h1>
+    <p>tenta abrir a imagem no seu navegador</p>
+    <picture>
+        <source media="(max-width: 700px)" srcset="img/p.png" type="image/png">
+        <source media="(max-width: 950px)" srcset="img/m.png" type="image/png">
+        <img src="img/g.png" alt="imagem grande">
+    </picture>
+    <p></p>
+    <p>para usar imagens dinamicas, vc precisa usar a função: < picture></p>
+    <p>< source media="(max-width: 950px)" srcset="img/m.png" type="image/png"></p>
+    <p>< img src="img/g.png" alt="imagem grande"></p>
+    <p>< /picture></p>
+    <p> </p>
+    <p>para funcionar o dinamismo o ultimo tem q ser o o maior (para desktop), e vai para o do meio q seria a segunda imagem tem q ser a media (tablet) e o primeiro seria o menor para o celular</p>
+    <p>lembrando q coloquei as img em uma pasta</p>
+    <p><a href="../index.html">voltar</a></p>
+</body>
+</html>

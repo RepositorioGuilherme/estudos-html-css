@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pseudo-classes</title>
+    <style>
+        div > p{
+            display: none; /*none esconde*/
+        }
+        div#passe:hover > p{
+            display: block;
+        }
+        div > img{
+            display: none;
+        }
+        div#imag:hover > img{
+            display: block;
+        }
+        div#imag:hover{
+            background-color: yellow;
+        }
+        div.sei:hover{
+            background-color: aquamarine;
+        }
+        div > video{
+            display: none;
+        }
+        div.sei:hover > video{
+            display: block;
+        }
+        div{
+            display: inline-block;
+            text-align: center;
+            border: 1px solid black;
+            background-color: rgb(145, 73, 212);
+            height: 200px;
+            width: 200px;
+        }
+        div:hover{
+            background-color: blue;
+        }
+        div#passe:hover{
+            background-attachment: fixed;
+            background-image: linear-gradient(0deg, #4352F0, #F01313);
+            color: black;
+            height: 200px;
+            width: 200px;
+        }
+    </style>
+</head>
+<body>
+    <h1> usando o :hover</h1>
+    <div class="sei">
+        passe o mouse aqui
+        <video src="video.mp4" width="200" allow="autoplay" controls></video>
+    </div>
+    <div id="imag">
+        passe o mouse aqui
+        <img src="images.png" alt="era o sonic">
+    </div>
+    <div id="passe"> 
+        passe o mouse aqui
+        <p>seu pai kkkkkkk</p>
+    </div>
+    <h3>na proxima pagina será a personalização de links:</h3>
+    <p><a href="pg02.html" rel="next">proxima pagina</a></p>
+</body>
+</html>
